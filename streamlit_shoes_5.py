@@ -42,8 +42,8 @@ def main():
             f.write(uploaded_image.read())
         
         command = [
-            "python", "/content/drive/MyDrive/shoes/yolov5/detect.py",  # Update this path
-            "--weights", "/content/drive/MyDrive/shoes/yolov5/runs/train/shoes2/weights/best.pt",  # Update this path
+            "python", "detect.py",  # Update this path
+            "--weights", "best.pt",  # Update this path
             "--source", image_path
         ]
 
